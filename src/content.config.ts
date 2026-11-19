@@ -82,6 +82,22 @@ const photography = defineCollection({
 	}),
 });
 
+const novice = defineCollection({
+	// Load Markdown files in the `src/content/photography/` directory.
+	loader: glob({ base: './src/content/novice', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		id: z.number(),
+		filename: z.string(),
+		title: z.string(),
+		pubDate: siteDate(),
+		dateFormatted: z.string().optional(),
+		category: z.string(),
+		location: z.string(),
+		attribution: z.string().optional(),
+		tags: z.array(z.string()).min(1, "At least one tag is required"),
+	}),
+});
+
 const homeSectionHeaderSchema = z.object({
 	heading: z.string(),
 	subtitle: z.string(),
@@ -214,4 +230,4 @@ const pages = defineCollection({
 	}),
 });
 
-export const collections = { blog, log, photography, pages };
+export const collections = { blog, log, photography, novice, pages };
