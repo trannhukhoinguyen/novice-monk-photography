@@ -31,9 +31,9 @@ const customSectionItemSchema = z.object({
 	label: z.string(),
 });
 
-const blog = defineCollection({
+/*const blog = defineCollection({
 	// Load Markdown and MDX files in the `src/content/blog/` directory.
-	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
+	loader: glob({ base: './src/content/blog', pattern: '**!/!*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({ image }) =>
 		z.object({
@@ -53,7 +53,7 @@ const blog = defineCollection({
 			sectionDepth: sectionDepthSchema.optional(),
 			sections: z.array(customSectionItemSchema).optional(),
 		}),
-});
+});*/
 
 const log = defineCollection({
 	// Load Markdown files in the `src/content/log/` directory.
@@ -69,22 +69,6 @@ const log = defineCollection({
 const photography = defineCollection({
 	// Load Markdown files in the `src/content/photography/` directory.
 	loader: glob({ base: './src/content/photography', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
-		id: z.number(),
-		filename: z.string(),
-		title: z.string(),
-		pubDate: siteDate(),
-		dateFormatted: z.string().optional(),
-		category: z.string(),
-		location: z.string(),
-		attribution: z.string().optional(),
-		tags: z.array(z.string()).min(1, "At least one tag is required"),
-	}),
-});
-
-const novice = defineCollection({
-	// Load Markdown files in the `src/content/photography/` directory.
-	loader: glob({ base: './src/content/novice', pattern: '**/*.{md,mdx}' }),
 	schema: z.object({
 		id: z.number(),
 		filename: z.string(),
@@ -230,4 +214,8 @@ const pages = defineCollection({
 	}),
 });
 
-export const collections = { blog, log, photography, novice, pages };
+export const collections = {
+	// blog,
+	log,
+	photography,
+	pages };
