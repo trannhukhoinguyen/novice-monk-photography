@@ -87,7 +87,7 @@ function postBuildHtml() {
         const featureDirs = /** @type {const} */ ([
           'about',
           'now',
-          'blog',
+          // 'blog',
           'photography',
           'log',
           'tags',

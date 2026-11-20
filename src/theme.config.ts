@@ -25,7 +25,6 @@ export interface NavLinkConfig {
 
 export type HomePageKey =
   | 'home'
-  | 'blog'
   | 'about'
   | 'now'
   | 'photography'
@@ -253,12 +252,12 @@ export const themeMechanics: ThemeMechanicsConfig = {
   navigation: {
     items: [
       { label: 'Home', href: '/', enabled: true },
-      { label: 'About', href: '/about/', enabled: true },
-      { label: 'Now', href: '/now/', enabled: true },
-      { label: 'Blog', href: '/blog/', enabled: true, activePrefixes: ['/tags'] },
+      // { label: 'About', href: '/about/', enabled: true },
+      // { label: 'Now', href: '/now/', enabled: true },
+      // { label: 'Blog', href: '/blog/', enabled: true, activePrefixes: ['/tags'] },
       { label: 'Photography', href: '/photography/', enabled: true },
-      { label: 'Log', href: '/log/', enabled: true },
-      { label: 'Contact', href: '/contact/', enabled: true },
+      // { label: 'Log', href: '/log/', enabled: true },
+      // { label: 'Contact', href: '/contact/', enabled: true },
     ],
   },
 
