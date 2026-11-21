@@ -78,7 +78,7 @@ export const siteConfig: SiteIdentityConfig = {
   site: {
     url: 'https://www.example.com',
     domain: 'example.com',
-    title: '.',
+    title: 'Sa di chăm chỉ - Sa di thôi nghĩ',
     description:
       '',
     locale: 'en_US',
@@ -98,7 +98,7 @@ export const siteConfig: SiteIdentityConfig = {
   },
 
   author: {
-    name: 'Alex Mercer',
+    name: 'Sa di chăm chỉ - Sa di thôi nghĩ',
     alternateName: 'Alexander Mercer',
     avatar: 'author.jpg',
     aboutImage: 'author.jpg',
