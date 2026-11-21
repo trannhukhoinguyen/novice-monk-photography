@@ -78,9 +78,9 @@ export const siteConfig: SiteIdentityConfig = {
   site: {
     url: 'https://www.example.com',
     domain: 'example.com',
-    title: 'Alex Mercer',
+    title: '.',
     description:
-      'Alex Mercer — Principal Cloud & Platform Architect. Distributed edge systems, multi-region AWS infrastructure, Terraform automation, and architectural photography.',
+      '',
     locale: 'en_US',
     language: 'en-us',
     timeZone: 'America/Los_Angeles',

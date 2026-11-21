@@ -230,7 +230,7 @@ export type ThemeConfig = SiteIdentityConfig & ThemeMechanicsConfig;
 
 export const themeMechanics: ThemeMechanicsConfig = {
   logo: {
-    text: 'ALEX MERCER',
+    text: '',
     ariaLabel: siteConfig.site.title,
     letterSpacing: '0.22em',
     fontSize: 14,

@@ -41,10 +41,10 @@ blogSection:
   linkLabel: "View all articles"
   footerLinkLabel: "View all blog posts"
 photosSection:
-  heading: "From the Photo Roll"
-  subtitle: "Architectural studies, coastal geometries, and high-altitude landscapes."
-  linkLabel: "Browse gallery"
-  footerLinkLabel: "View the full photo gallery"
+  heading: ""
+  subtitle: ""
+  linkLabel: "Browse full gallery"
+  footerLinkLabel: "Browse full gallery"
 logSection:
   heading: "From the Log"
   subtitle: "Chronological stream of operational field notes, release changelogs, and gallery additions."

@@ -3,6 +3,7 @@ import Logo from './Logo.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { getNavLinks } from '../utils/navigation';
 import { themeConfig } from '../theme.config';
+import NoviceLogo from './NoviceLogo.astro';
 
 const navLinks = getNavLinks(Astro.url.pathname);
 ---
@@ -16,7 +17,7 @@ const navLinks = getNavLinks(Astro.url.pathname);
         aria-label={`${themeConfig.site.title} Homepage`}
         class="group relative z-10 flex h-16 shrink-0 items-center overflow-visible"
       >
-        <Logo class="h-16 w-auto overflow-visible transition-opacity group-hover:opacity-80" />
+        <NoviceLogo class="h-16 w-auto overflow-visible transition-opacity group-hover:opacity-80" />
       </a>
 
       <ul class="hidden lg:flex lg:h-16 lg:items-stretch lg:gap-7">
@@ -31,6 +32,7 @@ const navLinks = getNavLinks(Astro.url.pathname);
                   ? 'border-amber-600 text-gray-900 dark:text-white'
                   : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-800 dark:text-gray-400 dark:hover:border-gray-600 dark:hover:text-gray-200',
               ]}
+              target={item.href?.includes('http') ? "_blank" : "_self"}
             >
               {item.label}
             </a>
