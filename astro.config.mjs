@@ -13,7 +13,6 @@ import { rehypeTechTooltips, TECH_TOOLTIPS_DIGEST } from './src/plugins/rehype-t
 import { getImagesForUrl, getLastModForUrl } from './src/utils/sitemap-images.mjs';
 import { themeConfig } from './src/theme.config.ts';
 import { isFeatureEnabled, isUrlEnabled } from './src/utils/features.ts';
-import rehypeMermaid from 'rehype-mermaid';
 
 /**
  * Astro integration ensuring sitemap.xml exists alongside sitemap-index.xml
@@ -369,46 +368,15 @@ export default defineConfig({
   markdown: {
     syntaxHighlight: {
       type: 'shiki',
-      excludeLangs: ['mermaid'],
     },
     processor: unified({
       remarkPlugins: [[remarkAlerts, { version: 'v2-note' }], remarkYouTube],
       rehypePlugins: [
         [
-          rehypeMermaid,
           {
             strategy: 'inline-svg',
             launchOptions: {
               args: ['--no-sandbox', '--disable-setuid-sandbox'],
-            },
-            mermaidConfig: {
-              theme: 'dark',
-              htmlLabels: true,
-              flowchart: {
-                htmlLabels: true,
-                padding: 20,
-                wrappingWidth: 240,
-                subGraphTitleMargin: {
-                  top: 10,
-                  bottom: 8,
-                },
-                diagramPadding: 12,
-              },
-              themeCSS: `
-                .cluster-label span.nodeLabel p { padding: 0 12px !important; }
-                .node .nodeLabel p { padding: 2px 6px !important; }
-              `,
-              themeVariables: {
-                darkMode: true,
-                background: 'transparent',
-                mainBkg: '#1f2937',
-                nodeBorder: '#f59e0b',
-                clusterBkg: '#111827',
-                titleColor: '#f3f4f6',
-                textColor: '#f3f4f6',
-                lineColor: '#f59e0b',
-                arrowheadColor: '#f59e0b',
-              },
             },
           },
         ],

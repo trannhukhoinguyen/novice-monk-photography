@@ -58,7 +58,6 @@ const { Content, headings } = await render(post);
 const readingTime = getReadingTime(post.body);
 const readingTimeMinutes = getReadingTimeMinutes(post.body);
 const wordCount = getWordCount(post.body);
-const hasMermaid = /```mermaid\b/.test(post.body ?? '');
 const hasYouTube = hasVideoEmbed(post.body);
 ---
 
@@ -71,7 +70,6 @@ const hasYouTube = hasVideoEmbed(post.body);
 	nextPost={nextPost}
 	prevPost={prevPost}
 	headings={headings}
-	hasMermaid={hasMermaid}
 	hasYouTube={hasYouTube}
 >
 	<Content />

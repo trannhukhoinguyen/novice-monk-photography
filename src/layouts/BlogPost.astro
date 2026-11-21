@@ -6,7 +6,6 @@ import ContactForm from '../components/ContactForm.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import SectionNav from '../components/SectionNav.astro';
 import TechTooltipsScript from '../components/scripts/TechTooltipsScript.astro';
-import MermaidZoomScript from '../components/scripts/MermaidZoomScript.astro';
 import YouTubeEmbedScript from '../components/scripts/YouTubeEmbedScript.astro';
 import { Image } from 'astro:assets';
 import { authorAvatarImage as authorImage } from '../utils/authorImages';
@@ -143,7 +142,7 @@ const ogImage = heroImage || (id ? `/og/blog/${id}.jpg` : '/og/blog.jpg');
               <span class="font-semibold text-xs uppercase tracking-wider text-sky-800 dark:text-sky-300">Living Homelab Proof-of-Concept</span>
             </div>
             <p class="mt-2 text-xs/5 sm:text-sm/6 text-gray-600 dark:text-gray-300">
-              This architecture is part of the physical infrastructure running live on 
+              This architecture is part of the physical infrastructure running live on
               <a href="https://www.home-lab.net" target="_blank" rel="noopener noreferrer" class="font-medium text-sky-700 dark:text-sky-400 underline decoration-sky-400/50 hover:text-sky-600 dark:hover:text-sky-300 transition-colors">
                 home-lab.net &rarr;
               </a>
@@ -275,7 +274,7 @@ const ogImage = heroImage || (id ? `/og/blog/${id}.jpg` : '/og/blog.jpg');
       <!-- Feedback / Discussion -->
       {showContactForm && (
         <div class="mt-12">
-          <ContactForm 
+          <ContactForm
             title="Thoughts or questions on this article?"
             subtitle="Found a bug, tested a similar setup, or want to discuss the details? Drop a message below."
             subject={`Feedback on: ${title}`}
