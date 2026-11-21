@@ -1,5 +1,5 @@
 ---
-pageTitle: "Alex Mercer — Photography"
-description: "Sample photography gallery showcasing the aspect-aware Smart Flex grid, lightbox, and deep-linking."
+pageTitle: "Sa di chăm chỉ - Sa di thôi nghĩ — Photography"
+description: "Vạn pháp quy nhất, Nhất quy hà xứ?"
 heading: "Photography"
 ---
