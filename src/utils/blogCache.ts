@@ -14,12 +14,9 @@ const BLOG_TEMPLATE_DIGEST = (() => {
     'src/components/SectionNav.astro',
     'src/scripts/section-nav.ts',
     'src/scripts/tech-tooltips.ts',
-    'src/scripts/mermaid-zoom.ts',
     'src/styles/global.css',
     'src/plugins/remark-alerts.mjs',
-    'src/plugins/rehype-mermaid-a11y.mjs',
     'src/components/scripts/TechTooltipsScript.astro',
-    'src/components/scripts/MermaidZoomScript.astro',
     'src/components/scripts/YouTubeEmbedScript.astro',
   ]) {
     try {

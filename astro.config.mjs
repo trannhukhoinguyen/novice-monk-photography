@@ -9,7 +9,6 @@ import { fileURLToPath } from 'node:url';
 import { remarkAlerts } from './src/plugins/remark-alerts.mjs';
 import { remarkYouTube } from './src/plugins/remark-youtube.mjs';
 import { THUMB_CACHE_DIR, THUMB_PUBLIC_PREFIX, THUMB_FILENAME_RE, buildThumbnailBuffer, remoteThumbnailUrl } from './src/utils/youtube-thumbnail.mjs';
-import { rehypeMermaidA11y } from './src/plugins/rehype-mermaid-a11y.mjs';
 import { rehypeTechTooltips, TECH_TOOLTIPS_DIGEST } from './src/plugins/rehype-tech-tooltips.mjs';
 import { getImagesForUrl, getLastModForUrl } from './src/utils/sitemap-images.mjs';
 import { themeConfig } from './src/theme.config.ts';
@@ -413,7 +412,6 @@ export default defineConfig({
             },
           },
         ],
-        [rehypeMermaidA11y, { version: 'v2-build-time-wrapper' }],
         [rehypeTechTooltips, { digest: TECH_TOOLTIPS_DIGEST }],
       ],
     }),
