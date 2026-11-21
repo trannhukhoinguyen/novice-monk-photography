@@ -372,14 +372,6 @@ export default defineConfig({
     processor: unified({
       remarkPlugins: [[remarkAlerts, { version: 'v2-note' }], remarkYouTube],
       rehypePlugins: [
-        [
-          {
-            strategy: 'inline-svg',
-            launchOptions: {
-              args: ['--no-sandbox', '--disable-setuid-sandbox'],
-            },
-          },
-        ],
         [rehypeTechTooltips, { digest: TECH_TOOLTIPS_DIGEST }],
       ],
     }),
