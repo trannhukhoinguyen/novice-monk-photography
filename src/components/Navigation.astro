@@ -1,5 +1,4 @@
 ---
-import Logo from './Logo.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import { getNavLinks } from '../utils/navigation';
 import { themeConfig } from '../theme.config';
@@ -17,7 +16,7 @@ const navLinks = getNavLinks(Astro.url.pathname);
         aria-label={`${themeConfig.site.title} Homepage`}
         class="group relative z-10 flex h-16 shrink-0 items-center overflow-visible"
       >
-        <NoviceLogo class="h-16 w-auto overflow-visible transition-opacity group-hover:opacity-80" />
+        <img class="h-16 w-auto overflow-visible transition-opacity group-hover:opacity-80" src={"/novice-monk.png"}/>
       </a>
 
       <ul class="hidden lg:flex lg:h-16 lg:items-stretch lg:gap-7">
