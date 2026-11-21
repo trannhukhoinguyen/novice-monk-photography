@@ -256,6 +256,7 @@ export const themeMechanics: ThemeMechanicsConfig = {
       // { label: 'Now', href: '/now/', enabled: true },
       // { label: 'Blog', href: '/blog/', enabled: true, activePrefixes: ['/tags'] },
       { label: 'Photography', href: '/photography/', enabled: true },
+      { label: 'Sa di chăm chỉ - Sa di thôi nghĩ', href: 'https://www.facebook.com/profile.php?id=61596404115518', enabled: true },
       // { label: 'Log', href: '/log/', enabled: true },
       // { label: 'Contact', href: '/contact/', enabled: true },
     ],

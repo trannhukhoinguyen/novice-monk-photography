@@ -34,7 +34,7 @@ const isTwoColSocial = socialCount >= 6;
 <footer class="border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 transition-colors">
   <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-28">
     <div class="grid grid-cols-1 gap-14 xl:grid-cols-12 xl:gap-8">
-      <div class:list={[isTwoColSocial ? 'xl:col-span-3' : 'xl:col-span-4']}>
+<!--      <div class:list={[isTwoColSocial ? 'xl:col-span-3' : 'xl:col-span-4']}>
         <a
           href="/"
           title={`${site.title} - Home`}
@@ -43,7 +43,7 @@ const isTwoColSocial = socialCount >= 6;
         >
           <Logo class="h-12 w-auto overflow-visible transition-opacity group-hover:opacity-80" />
         </a>
-      </div>
+      </div>-->
 
       <nav
         aria-label="Footer directory"
@@ -252,7 +252,7 @@ const isTwoColSocial = socialCount >= 6;
           )}
         </div>
 
-        <div>
+<!--        <div>
           <h2 class="text-sm/6 font-semibold text-gray-900 dark:text-white">{footer.siteColumnTitle}</h2>
           <ul class="mt-5 space-y-3.5">
             {showHome && (
@@ -436,11 +436,11 @@ const isTwoColSocial = socialCount >= 6;
             ))}
           </ul>
         </div>
-        )}
+        )}-->
       </nav>
     </div>
 
-    <div data-footer-bottom class="mt-16 border-t border-gray-100 dark:border-gray-800/80 pt-8 sm:mt-20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 dark:text-gray-400">
+<!--    <div data-footer-bottom class="mt-16 border-t border-gray-100 dark:border-gray-800/80 pt-8 sm:mt-20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 dark:text-gray-400">
       <p>&copy; {currentYear} <a href={site.url} class="hover:text-gray-700 dark:hover:text-gray-200 transition-colors">{author.name}</a></p>
       {footer.showThemeAttribution && (
         <p class="flex flex-wrap items-center justify-center gap-1.5 text-gray-500 dark:text-gray-400">
@@ -475,6 +475,6 @@ const isTwoColSocial = socialCount >= 6;
           </span>
         </p>
       )}
-    </div>
+    </div>-->
   </div>
 </footer>

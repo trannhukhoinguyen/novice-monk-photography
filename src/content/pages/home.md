@@ -4,10 +4,10 @@ description: "Alex Mercer — Principal Cloud & Platform Architect. Multi-region
 # Powers the 2-column classic hero (`hero.style: 'classic'` in `src/theme.config.ts`)
 # and serves as fallback copy when `hero.style: 'metrics'` omits optional fields.
 intro:
-  eyebrow: "The Navigator Starter Theme"
-  heading: "Alex Mercer"
-  leftColumn: "I’m a Principal Cloud & Platform Architect focused on resilient, low-latency distributed systems—designing multi-region edge architectures, declarative Terraform pipelines, and zero-SSR static web platforms."
-  rightColumn: "This site runs on The Navigator—an open-source Astro 7.4 + Tailwind CSS v4 starter theme with optional AWS S3 Multi-Region Access Point (MRAP) + CloudFront SigV4a infrastructure and automated GitHub Actions / GitLab CI pipelines. Follow the 3-part setup flow below to make it yours without touching a single .astro template."
+  eyebrow: "Vạn pháp quy nhất, nhất quy hà xứ?"
+  heading: "Sa di chăm chỉ - Sa di thôi nghĩ"
+  leftColumn: "Chỉ vật truyền tâm, nhân bất hội xứ"
+  rightColumn: "Huyền nhai tán thủ, tự khẳng thừa đương, tuyệt hậu tái tô, khi quân bất đắc"
   ctaLabel: "Explore background & living CV"
   ctaHref: "/about/"
 setupGuide:
